@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css"
+        integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+        integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css"
+        integrity="sha512-3YMBYASBKTrccbNMWlnn0ZoEOfRjVs9qo/dlNRea196pg78HaO0H/xPPO2n6MIqV6CgTYcWJ1ZB2EgWjeNP6XA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircularMenu</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="toggle"><i class="fa-solid fa-plus"></i></div>
+        <li style="--i:0;">
+            <a href="#"><i class="fa-brands fa-aws"></i></a>
+        </li>
+        <li style="--i:1;">
+            <a href="#"><i class="fa-brands fa-python"></i></a>
+        </li>
+        <li style="--i:2;">
+            <a href="#"><i class="fa-brands fa-react"></i></a>
+        </li>
+        <li style="--i:3;">
+            <a href="#"><i class="fa-brands fa-html5"></i></a>
+        </li>
+        <li style="--i:4;">
+            <a href="#"><i class="fa-brands fa-css3-alt"></i></a>
+        </li>
+        <li style="--i:5;">
+            <a href="#"><i class="fa-brands fa-raspberry-pi"></i></a>
+        </li>
+        <li style="--i:6;">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li style="--i:7;">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </li>
+    </div>
+</body>
+<script>
+    let toggle = document.querySelector('.toggle');
+    let menu = document.querySelector('.menu');
+    toggle.onclick = function () {
+        menu.classList.toggle('active')
+    }
+</script>
+
+</html>
